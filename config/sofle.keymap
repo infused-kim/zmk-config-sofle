@@ -60,7 +60,7 @@
 
 		navigation_layer {
 			bindings = <
-				&bt BT_CLR 		  &bt BT_SEL 0 	&bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3 	  &bt BT_SEL 4                                  &trans          &trans    		&trans   &trans    		&trans  &tog4
+				&bt BT_CLR 		  &bt BT_SEL 0 	&bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3 	  &bt BT_SEL 4                                  &trans          &trans    		&trans   &trans    		&trans  &tog 4
 				&kp LC(LA(N1))  &kp LC(LA(Q)) &kp LC(LA(W))   &kp LC(LA(E))   &kp LC(LA(R))   &kp LC(LA(T))                                 &kp PG_UP       &kp LC(LBKT)	&kp UP   &kp LC(RBKT)	&kp N0  &trans
 				&kp LC(LA(N2))  &kp LC(LA(A)) &kp LC(LA(S))   &kp LC(LA(D))   &kp LC(LA(N0))	&kp LC(LA(G))                                 &kp PG_DN       &kp LEFT  		&kp DOWN &kp RIGHT 		&kp DEL &kp BSPC
 				&kp LC(LA(N3))  &kp LC(LA(Z)) &kp LC(LA(X))   &kp LC(LA(C))   &kp LC(LA(V))   &kp LC(LA(B)) &kp LC(LA(DEL)) &trans          &trans          &kp HOME  		&trans   &kp END   		&trans  &trans
