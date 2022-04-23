@@ -3,13 +3,13 @@
  *
  * SPDX-License-Identifier: MIT
  */
-
+//TODO fix this:  IT is using this keymap but its not right, its not registering the right keys.
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
 #include <dt-bindings/zmk/bt.h>
 #include <dt-bindings/zmk/outputs.h>
 #include <dt-bindings/zmk/ext_power.h>
-Its not using my keymap
+
 &lt {
     tapping-term-ms = <175>;
 };
@@ -32,7 +32,7 @@ Its not using my keymap
 			bindings = <
 				&kp ESC     &kp N1 	&kp N2   	&kp N3   &kp N4    &kp N5                      									&kp N6 				&kp N7    &kp N8    &kp N9   &kp N0   &trans
 				&kp GRAVE   &kp Q  	&kp W    	&kp E    &kp R     &kp T                       									&kp Y  				&kp U     &kp I     &kp O    &kp P    &kp BSPC
-				&kp TAB     &kp A  	&kp S    	&kp D    &kp F     &kp G                       									&kp H  	 			&kp J     &kp K     &kp L    &kp SEMI &kp SQT
+				&kp TAB     &kp A  	&kp S    	&kp D    &kp D     &kp G                       									&kp H  	 			&kp J     &kp K     &kp L    &kp SEMI &kp SQT
 				&kp LSHFT   &kp Z  	&kp X    	&kp C    &kp V     &kp B  				 &kp C_PP  		 &kp C_MUTE 		&kp N  	 			&kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
 														&kp LGUI  &kp LALT &kp LCTRL  &lt CODE SPACE &lt NAVI RET  &lt NUMP SPACE &lt NAVI RET 	&kp RCTRL &kp RALT  &kp RGUI
 			>;
