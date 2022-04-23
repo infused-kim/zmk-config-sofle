@@ -30,7 +30,7 @@
     compatible = "zmk,keymap";
 		default_layer {
 			bindings = <
-				&kp ESC     &kp N1 	&kp N2   	&kp N3   &kp N4    &kp N5                      									&kp N6 				&kp N7    &kp N8    &kp N9   &kp N0   &tog 4
+				&kp ESC     &kp N1 	&kp N2   	&kp N3   &kp N4    &kp N5                      									&kp N6 				&kp N7    &kp N8    &kp N9   &kp N0   &trans
 				&kp GRAVE   &kp Q  	&kp W    	&kp E    &kp R     &kp T                       									&kp Y  				&kp U     &kp I     &kp O    &kp P    &kp BSPC
 				&kp TAB     &kp A  	&kp S    	&kp D    &kp F     &kp G                       									&kp H  	 			&kp J     &kp K     &kp L    &kp SEMI &kp SQT
 				&kp LSHFT   &kp Z  	&kp X    	&kp C    &kp V     &kp B  				 &kp C_PP  		 &kp C_MUTE 		&kp N  	 			&kp M     &kp COMMA &kp DOT  &kp FSLH &kp RSHFT
@@ -60,11 +60,11 @@
 
 		navigation_layer {
 			bindings = <
-				&bt BT_CLR 		  &bt BT_SEL 0 	&bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3 	  &bt BT_SEL 4                                  &trans          &trans    		&trans   &trans    		&trans  &trans
+				&bt BT_CLR 		  &bt BT_SEL 0 	&bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3 	  &bt BT_SEL 4                                  &trans          &trans    		&trans   &trans    		&trans  &tog4
 				&kp LC(LA(N1))  &kp LC(LA(Q)) &kp LC(LA(W))   &kp LC(LA(E))   &kp LC(LA(R))   &kp LC(LA(T))                                 &kp PG_UP       &kp LC(LBKT)	&kp UP   &kp LC(RBKT)	&kp N0  &trans
 				&kp LC(LA(N2))  &kp LC(LA(A)) &kp LC(LA(S))   &kp LC(LA(D))   &kp LC(LA(N0))	&kp LC(LA(G))                                 &kp PG_DN       &kp LEFT  		&kp DOWN &kp RIGHT 		&kp DEL &kp BSPC
 				&kp LC(LA(N3))  &kp LC(LA(Z)) &kp LC(LA(X))   &kp LC(LA(C))   &kp LC(LA(V))   &kp LC(LA(B)) &kp LC(LA(DEL)) &trans          &trans          &kp HOME  		&trans   &kp END   		&trans  &trans
-																		  &kp LC(LA(N7))  &kp LC(LA(N6))  &kp LC(LA(N5))  &trans        &trans          &kp LC(LA(N9))  &kp LC(LA(N8))  &kp RET   		&trans   &trans
+																		  &reset          &bootloader     &kp LC(LA(N5))  &trans        &trans          &kp LC(LA(N9))  &kp LC(LA(N8))  &kp RET   		&trans   &reset
 			>;
 
 			sensor-bindings = <
