@@ -11,7 +11,7 @@
 #include <dt-bindings/zmk/ext_power.h>
 
 &lt {
-    tapping-term-ms = <170>;
+    tapping-term-ms = <190>;
 };
 
 #define DEFAULT 0
