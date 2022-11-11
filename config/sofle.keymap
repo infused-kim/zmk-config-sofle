@@ -45,6 +45,18 @@
       tapping-term-ms = <175>;
       bindings = <&kp LC(LA(G))>, <&kp LC(LA(A))>;
     };
+    macros {
+      minimize_window: minimize_window {
+        label = "minimize_window";
+        compatible = "zmk,behavior-macro";
+        #binding-cells = <0>;
+        bindings
+          = <&macro_press &kp LGUI>
+          , <&macro_tap &kp DOWN &kp DOWN>
+          , <&macro_release &kp LGUI>
+          ;
+      };
+    };
   };
 
   keymap {
