@@ -56,13 +56,13 @@
 // | `~   |  F1  |  F2  |  F3  |  F4  |  F5  |                   |  F6  |  F7   |  F8   |  F9  |  F10  |  F11  |
 // |      |      |      |      |      |      |                   | F12  |   -   |   =   |   [  |   ]   |   \   |
 // |      |      |      |      |      |      |                   |      |   _   |   +   |   {  |   }   |   |   |
-// | RESET|      |      |      |      |      |        |  |       | HOME |       |       |      |  END  |       |
+// |      |      |      |      |      |      |        |  |       | HOME |       |       |      |  END  |       |
 //               |      |      |      |      |        |  |       |      |       |       |      |
             bindings = <
 &kp GRAVE  &kp F1  &kp F2  &kp F3  &kp F4  &kp F5                        &kp F6    &kp F7     &kp F8     &kp F9    &kp F10   &kp F11
 &none      &none   &none   &none   &none   &none                         &kp F12   &kp MINUS  &kp EQUAL  &kp LBKT  &kp RBKT  &kp BSLH
 &none      &none   &none   &none   &none   &none                         &none     &kp UNDER  &kp PLUS   &kp LBRC  &kp RBRC  &kp PIPE
-&reset     &none   &none   &none   &none   &none    &trans     &trans    &kp HOME  &none      &none      &none     &kp END   &trans
+&none     &none   &none   &none   &none   &none    &trans     &trans    &kp HOME  &none      &none      &none     &kp END   &trans
                    &trans  &trans  &trans  &trans   &trans     &trans    &trans    &trans     &trans     &trans
             >;
 
@@ -75,13 +75,13 @@
 // |BTCLR | BT1  | BT2  |  BT3  |  BT4  |  BT5 |                |      |      |       |      |       |       |
 // |      |      |      |       |       |      |                | PGUP |      |   ^   |      |       |       |
 // |      |      |      |       |       | CAPS |                | PGDN |   <- |   v   |  ->  |       |       |
-// |      | UNDO | CUT  | COPY  | PASTE |      |      |  |      | HOME |      |       |      | END   | RESET |
+// |      | UNDO | CUT  | COPY  | PASTE |      |      |  |      | HOME |      |       |      | END   |       |
 //               |      |       |       |      |      |  |      |      |      |       |      |
             bindings = <
-&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                       &trans     &trans    &trans    &trans     &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &trans                             &kp PG_UP  &trans    &kp UP    &trans     &trans  &trans
-&trans      &trans        &trans        &trans        &trans        &kp CLCK                           &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans  &trans
-&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans         &trans   &trans     &kp HOME   &trans    &trans    &trans     &kp END  &reset
+&bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4                       &trans     &trans    &trans    &trans     &trans   &trans
+&trans      &trans        &trans        &trans        &trans        &trans                             &kp PG_UP  &trans    &kp UP    &trans     &trans   &trans
+&trans      &trans        &trans        &trans        &trans        &kp CLCK                           &kp PG_DN  &kp LEFT  &kp DOWN  &kp RIGHT  &trans   &trans
+&trans      &kp K_UNDO    &kp K_CUT     &kp K_COPY    &kp K_PASTE   &trans         &trans   &trans     &kp HOME   &trans    &trans    &trans     &kp END  &none
                           &trans        &trans        &trans        &trans         &trans   &trans     &trans     &trans    &trans    &trans
             >;
 
